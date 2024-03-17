@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Paragon Poppins';
+	font-weight: 400;
+	scroll-behavior: smooth;
+}
+html,
+body {
+	overflow-x: hidden;
+}
+body {
+	background-color: $white;
+}
+ul {
+	list-style: none;
+}
+a {
+	color: $black;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+	font-style: italic;
+	width: 100%;
+	height: auto;
+
+	&.icon {
+		width: 2rem;
+	}
+}
+header,
+section,
+main,
+footer {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1512px;
+	padding: 4rem 4rem;
+
+	@media (max-width: 700px) {
+		padding-inline: 2rem;
+		padding-block: 2rem;
+	}
+	@media (max-width: 500px) {
+		padding-inline: 1rem;
+	}
+}
